@@ -1,0 +1,60 @@
+extends base.pug
+
+block scripts
+	script(src='/static/index.js')
+
+block style
+	style
+		include ../static/style.css
+
+block content
+	nav#navbar
+		ul
+			div#logo
+				img(src = '/static/img/logo/dancer logo.png')
+				| SDA
+			li #[a(href = "/") Home]
+			li #[a(href = "/") About]
+			li #[a(href = "/") Services]
+			li #[a(href = "/") Class info]
+			li #[a(href = "/contact") Contact Us]
+
+	section#introSection
+		div#div1    Welcome to Samar's Dance Academy
+		div#div2    Eat Sleep Dance Repeat
+
+	section#missionSection
+		h2  Our Mission
+		div.container
+			div.card
+				h3 Dance perfection
+				div.card-box
+					div.card-img
+						img(src = "/static/img/1.png")
+
+					div.card-content
+						p This is the best dance academy.
+			div.card
+				h3 Dance the way you like
+				div.card-box
+					div.card-img
+						img(src = "/static/img/2.png")
+
+					div.card-content
+						p This is the best dance academy.
+			div.card
+				h3 Expert teaching
+				div.card-box
+					div.card-img
+						img(src = "/static/img/3.png")
+
+					div.card-content
+						p This is the best dance academy.
+
+	section#sponsorSection
+		h2 Our Sponsors
+			div#sponsor
+				img(src = "/static/img/logo/1.jpg", class = "spImage")
+				img(src = "/static/img/logo/2.jpg", class = "spImage")
+				img(src = "/static/img/logo/3.gif", class = "spImage")
+				img(src = "/static/img/logo/4.jpg", class = "spImage")
